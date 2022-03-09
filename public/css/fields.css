@@ -1,0 +1,131 @@
+.sq-mb-2 {
+  margin-bottom: 0.5rem !important;
+}
+.sq--mt-2 {
+  margin-top: -0.5rem !important;
+}
+.sq--mt-4 {
+  margin-top: -1rem !important;
+}
+.sq--mt-5 {
+  margin-top: -1.25rem !important;
+}
+.sq-flex {
+  display: flex !important;
+}
+.sq-items-center {
+  align-items: center !important;
+}
+.sq-justify-end {
+  justify-content: flex-end !important;
+}
+.sq-space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0 !important;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse)) !important;
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse))) !important;
+}
+.sq-space-x-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0 !important;
+  margin-right: calc(0.75rem * var(--tw-space-x-reverse)) !important;
+  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse))) !important;
+}
+.sq-border-gray-300 {
+  --tw-border-opacity: 1 !important;
+  border-color: rgba(209, 213, 219, var(--tw-border-opacity)) !important;
+}
+.sq-text-xs {
+  font-size: 0.75rem !important;
+  line-height: 1rem !important;
+}
+.sq-uppercase {
+  text-transform: uppercase !important;
+}
+.sq-text-gray-400 {
+  --tw-text-opacity: 1 !important;
+  color: rgba(156, 163, 175, var(--tw-text-opacity)) !important;
+}
+.acf-field-example-field .acf-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.acf-field-example-field .acf-input .acf-example-field-input {
+  margin-right: 1.5rem;
+  width: 50%;
+}
+.acf-field-example-field .acf-input .acf-example-field-input:last-child {
+  margin-right: 0px;
+}
+
+.dimensions .active {
+  font-weight: 600 !important;
+  --tw-text-opacity: 1 !important;
+  color: rgba(0, 0, 0, var(--tw-text-opacity)) !important;
+}
+
+.dimension-indicator {
+  display: block;
+  position: relative;
+  width: 27px;
+  min-width: 27px;
+  height: 27px;
+  margin-right: 10px;
+}
+.dimension-indicator.top .dimension-indicator__top {
+  background-color: #000;
+}
+.dimension-indicator.bottom .dimension-indicator__bottom {
+  background-color: #000;
+}
+.dimension-indicator.left .dimension-indicator__left {
+  background-color: #000;
+}
+.dimension-indicator.right .dimension-indicator__right {
+  background-color: #000;
+}
+.dimension-indicator__top, .dimension-indicator__left, .dimension-indicator__bottom, .dimension-indicator__right {
+  position: absolute;
+  background-color: #d9d9d9;
+  cursor: pointer;
+}
+.dimension-indicator__top, .dimension-indicator__bottom {
+  width: 100%;
+  height: 5px;
+}
+.dimension-indicator__top:before, .dimension-indicator__top:after, .dimension-indicator__bottom:before, .dimension-indicator__bottom:after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+  position: absolute;
+  z-index: 99;
+}
+.dimension-indicator__top:after, .dimension-indicator__bottom:after {
+  top: 0;
+  right: 0;
+}
+.dimension-indicator__top:before, .dimension-indicator__bottom:before {
+  top: 0;
+  left: 0;
+}
+.dimension-indicator__left, .dimension-indicator__right {
+  width: 5px;
+  height: 100%;
+}
+.dimension-indicator__top {
+  top: 0;
+  left: 0;
+}
+.dimension-indicator__bottom {
+  bottom: 0;
+  left: 0;
+}
+.dimension-indicator__left {
+  top: 0;
+  left: 0;
+}
+.dimension-indicator__right {
+  top: 0;
+  right: 0;
+}

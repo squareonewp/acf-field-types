@@ -1,0 +1,120 @@
+@tailwind components;
+@tailwind utilities;
+
+.acf-field-example-field {
+  .acf-input {
+    @apply sq-flex sq-items-center sq-justify-center;
+
+    .acf-example-field-input {
+      @apply sq-w-1/2 sq-mr-6;
+
+      &:last-child {
+        @apply sq-mr-0;
+      }
+    }
+  }
+}
+
+.dimensions {
+  .active {
+    @apply sq-font-semibold sq-text-black #{!important};
+  }
+}
+
+.dimension-indicator {
+  $border-width: 5px;
+  $width: 27px;
+
+  display: block;
+  position: relative;
+  width: $width;
+  min-width: $width;
+  height: $width;
+  margin-right: 10px;
+
+  &.top {
+    .dimension-indicator__top {
+      background-color: #000;
+    }
+  }
+
+  &.bottom {
+    .dimension-indicator__bottom {
+      background-color: #000;
+    }
+  }
+
+  &.left {
+    .dimension-indicator__left {
+      background-color: #000;
+    }
+  }
+
+  &.right {
+    .dimension-indicator__right {
+      background-color: #000;
+    }
+  }
+
+  &__top,
+  &__left,
+  &__bottom,
+  &__right {
+    position: absolute;
+    background-color: #d9d9d9;
+    cursor: pointer;
+  }
+
+  &__top,
+  &__bottom {
+    width: 100%;
+    height: $border-width;
+
+    &:before,
+    &:after {
+      content: '';
+      display: block;
+      width: $border-width;
+      height: $border-width;
+      background-color: #fff;
+      position: absolute;
+      z-index: 99;
+    }
+
+    &:after {
+      top: 0;
+      right: 0;
+    }
+
+    &:before {
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &__left,
+  &__right {
+    width: $border-width;
+    height: 100%;
+  }
+
+  &__top {
+    top: 0;
+    left: 0;
+  }
+
+  &__bottom {
+    bottom: 0;
+    left: 0;
+  }
+
+  &__left {
+    top: 0;
+    left: 0;
+  }
+
+  &__right {
+    top: 0;
+    right: 0;
+  }
+}

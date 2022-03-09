@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "mix watch",
+    "build": "mix",
+    "build:production": "mix --production"
+  },
+  "devDependencies": {
+    "laravel-mix": "^6.0.29",
+    "postcss": "^8.3.6",
+    "sass": "^1.39.0",
+    "sass-loader": "12.1.0",
+    "tailwindcss": "^2.2.17"
+  }
+}
